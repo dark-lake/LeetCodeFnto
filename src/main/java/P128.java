@@ -2,6 +2,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 最长连续序列
+ */
 public class P128 {
     public static int longestConsecutive(int[] nums) {
         if (nums.length == 0) {
@@ -31,6 +34,11 @@ public class P128 {
         return max_lx;
     }
 
+    /**
+     * 优化为原地版本
+     * @param nums
+     * @return
+     */
     public static int longestConsecutive_yd(int[] nums) {
         if (nums.length == 0) {
             return 0;
